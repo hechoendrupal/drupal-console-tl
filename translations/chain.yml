@@ -11,3 +11,7 @@ messages:
     set-environment-placeholders: 'I-Set and environment placeholders bilang:'
     missing-inline-placeholders: 'Missing inline placeholder(s) "%s"'
     set-inline-placeholders: 'Ipasa ang inline placeholders bilang:'
+examples:
+    -
+        description: 'Providing a file option using full path.'
+        execution: "drupal chain \\\n  --file=\"/path/to/file/chain-file.yml\"\n"

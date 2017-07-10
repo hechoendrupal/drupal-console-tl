@@ -4,3 +4,10 @@ messages:
     executing-cron: 'Menjalankan fungsi cron dari modul "%s"'
     success: 'Semua permintaan implementasi cron sudah dijalankan dengan sukses'
     lock: 'Attempting to re-run cron while it is already running'
+examples:
+    -
+        description: 'Execute the cron globally'
+        execution: "drupal cron:execute\n"
+    -
+        description: 'Execute the cron on the specified module'
+        execution: "drupal cron:execute \\\n  <module>\n"
