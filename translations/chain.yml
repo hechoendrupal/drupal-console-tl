@@ -4,13 +4,16 @@ options:
 questions:
     chain-file: 'Piliin ang chain file to execute'
 messages:
-    missing_file: 'dapat magbigay ng mabisang pangalan ng Valid Path.'
-    invalid_file: 'The file "%s" does not exists.'
-    module_install: 'module:install command is not runnable inside a chain queue and must be run independently.'
+    missing-file: 'You must provide a valid file path and name.'
+    invalid-file: 'The file "%s" does not exist.'
+    module-install: 'module:install command is not runnable inside a chain queue and must be run independently.'
     missing-environment-placeholders: 'Missing environment placeholder(s) "%s"'
     set-environment-placeholders: 'I-Set and environment placeholders bilang:'
     missing-inline-placeholders: 'Missing inline placeholder(s) "%s"'
     set-inline-placeholders: 'Ipasa ang inline placeholders bilang:'
+    missing_file: 'dapat magbigay ng mabisang pangalan ng Valid Path.'
+    invalid_file: 'The file "%s" does not exists.'
+    module_install: 'module:install command is not runnable inside a chain queue and must be run independently.'
 examples:
     -
         description: 'Providing a file option using full path.'
