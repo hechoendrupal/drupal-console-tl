@@ -11,6 +11,8 @@ messages:
     set-environment-placeholders: 'I-Set and environment placeholders bilang:'
     missing-inline-placeholders: 'Missing inline placeholder(s) "%s"'
     set-inline-placeholders: 'Ipasa ang inline placeholders bilang:'
+    select-value-for-placeholder: 'Select value for %s placeholder'
+    enter-value-for-placeholder: 'Enter value for %s placeholder'
     missing_file: 'dapat magbigay ng mabisang pangalan ng Valid Path.'
     invalid_file: 'The file "%s" does not exists.'
     module_install: 'module:install command is not runnable inside a chain queue and must be run independently.'
