@@ -5,6 +5,7 @@ messages:
     welcome: 'Welcome to the cache:rebuild command'
     rebuild: 'Rebuilding cache(s), wait a moment please.'
     completed: 'Tapos ng pag clear ng cache(s).'
+    invalid-cache: 'Cache "%s" is invalid.'
     invalid_cache: 'Ang Cache "%s" ay invalid.'
 questions:
     cache: 'Piliin ang cache.'

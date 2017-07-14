@@ -1,3 +1,10 @@
 description: 'I-disable ang View'
 messages:
     disabled-successfully: 'Ang View "%s" ay na-disable ng matagumpay.'
+examples:
+    -
+        description: 'Disable content view'
+        execution: "drupal views:disable  content\n"
+    -
+        description: 'Disable frontpage view'
+        execution: "drupal views:disable  frontpage\n"
