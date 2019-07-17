@@ -1,6 +1,6 @@
 options:
     env: 'Ang pangalan ng environment'
-    no-debug: 'Pag switch off ng debug mode'
+    debug: 'Switches on debug mode'
     learning: 'Generate a verbose code output'
     generate-chain: 'Ay nagpapakita sa options at argumento sa yaml output upang gamitin sa mga tanikalang utos'
     generate-inline: 'Ay nagpapakita sa options at argumento bilang inline command'
@@ -17,6 +17,7 @@ options:
     no-ansi: 'I-disable ang ANSI output'
     no-interaction: 'Wag magtanong ng anumang interactive'
     check-fix: 'Subukang ayusin and anumang nawawalng konpigyurasyon.'
+    no-debug: 'Pag switch off ng debug mode'
 arguments:
     command: 'Ang utos na patakbuhin'
 messages:
@@ -29,6 +30,8 @@ messages:
     files:
         generated: 'Generated or updated files'
         copied: 'Pagkopya ng files'
+    lines-code: 'Generated lines: %s'
+    path: 'Generation path'
     learning:
         route: "In order to to create pages it is necessary to define routes for them.\nA route maps a URL path to a controller. It defines with what function\nor method will be called when a URL is accessed.\nIf the user accesses http://drupal8.dev/{{ route.path }}, the routing\nsystem will look for a route with that path. In this case it will find a\nmatch, and execute the _controller callback. In this case the callback is\ndefined as a classname\n(\"\\Drupal\\{{ module }}\\Controller\\{{ class_name }}\")\nand a method (\"{{ route.method }}\")."
     autocomplete: "Bash atau Zsh: Tambahkan baris ini di file konfigurasi shell kamu:\n<info>source \"$HOME/.console/console.rc\" 2>/dev/null</info>\n\nFish: Buat link simbolik\n<info>ln -s ~/.console/drupal.fish ~/.config/fish/completions/drupal.fish</info>\n"
@@ -40,6 +43,9 @@ messages:
 errors:
     invalid-command: 'Command "%s" is not defined.'
     renamed-command: 'Command "%s" was renamed, use "%s" instead.'
+    drush-command: 'Command "%s" is a Drush command (deprecated). Drupal Console equivalent "%s" was executed instead.'
+    statistics-failed: "The Drupal console failed to send statistics. After 10 attempts, this feature was disabled.\nIf you want to enable it again, use the following command:\n\n<info>drupal settings:set statistics.enabled true</info>\n"
+    statistics-url-failed: "The Drupal console failed to send statistics.\nYou must configure it in the global config.yml, use the following command and choose your preference:\n\n<info>drupal init</info>"
 site:
     messages:
         path: 'Site path'
