@@ -2,3 +2,5 @@ description: 'I-display ang listahan ng mga chain files.'
 messages:
     directory: Directory
     file: 'Chain file name.'
+    command: 'Command name.'
+    no-files: 'No chain files found.'
